@@ -13,7 +13,13 @@ namespace FirstMvcApp.Controllers
         }
         public IActionResult Create()
         {
-            return View();  
+            var dogVM = new DogViewModel();
+            return View(dogVM);  
+        }
+
+        public IActionResult CreateDog(DogViewModel dogViewModel)
+        {
+            return View("Index");
         }
         public string Hello()
         {
