@@ -11,6 +11,10 @@ namespace FirstMvcApp.Controllers
             { Name = "Sif", Age = 5 };
             return View(dog);
         }
+        public IActionResult Create()
+        {
+            return View();  
+        }
         public string Hello()
         {
             return "Who is there?";
